@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Carving</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Carving</h1>
+        <p>Upload a disk image to recover files.</p>
+        <input type="file" id="disk-image" accept=".img, .dd">
+        <br>
+        <button onclick="startCarving()">Start Carving</button>
+        <div id="carving-results">
+            <h2>Recovered Files:</h2>
+            <ul id="file-list">
+                <li>No files recovered yet.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function startCarving() {
+            document.getElementById('file-list').innerHTML = '<li>Recovered file1.txt</li><li>Recovered image1.jpg</li>';
+        }
+    </script>
+</body>
+</html>

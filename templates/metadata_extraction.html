@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata Extraction</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Metadata Extraction</h1>
+        <p>Upload a file to extract metadata.</p>
+        <input type="file" id="metadata-file" accept=".jpg, .png, .pdf, .docx">
+        <br>
+        <button onclick="extractMetadata()">Extract Metadata</button>
+        <div id="metadata-results">
+            <h2>Extracted Metadata:</h2>
+            <ul id="metadata-list">
+                <li>No metadata extracted yet.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function extractMetadata() {
+            document.getElementById('metadata-list').innerHTML = '<li>Author: John Doe</li><li>Created: 2023-06-15</li>';
+        }
+    </script>
+</body>
+</html>

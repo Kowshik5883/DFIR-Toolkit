@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Management</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Case Management</h1>
+        <p>Organize and manage forensic cases.</p>
+        <button onclick="addCase()">Add New Case</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Case ID</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="case-list">
+                <tr>
+                    <td>001</td>
+                    <td>Sample Case</td>
+                    <td>Open</td>
+                    <td><button>View</button> <button>Close</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function addCase() {
+            let table = document.getElementById('case-list');
+            let row = table.insertRow();
+            row.innerHTML = '<td>002</td><td>New Case</td><td>Open</td><td><button>View</button> <button>Close</button></td>';
+        }
+    </script>
+</body>
+</html>

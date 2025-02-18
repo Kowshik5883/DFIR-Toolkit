@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Hunting</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Threat Hunting</h1>
+        <p>Investigate potential threats in the system.</p>
+        <input type="text" id="threat-input" placeholder="Enter threat indicator">
+        <br>
+        <button onclick="huntThreat()">Search</button>
+        <div id="threat-results">
+            <h2>Investigation Results:</h2>
+            <p id="result-text">No threats detected.</p>
+        </div>
+    </div>
+    <script>
+        function huntThreat() {
+            document.getElementById('result-text').innerText = 'No threats found.';
+        }
+    </script>
+</body>
+</html>

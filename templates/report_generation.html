@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generation</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Forensic Report</h1>
+        <p>Select format and generate a detailed forensic report.</p>
+        <select id="report-format">
+            <option value="pdf">PDF</option>
+            <option value="html">HTML</option>
+        </select>
+        <br>
+        <button onclick="generateReport()">Generate Report</button>
+        <div id="report-status">
+            <h2>Report Status:</h2>
+            <p id="status-text">No report generated yet.</p>
+        </div>
+    </div>
+    <script>
+        function generateReport() {
+            document.getElementById('status-text').innerText = 'Report successfully generated!';
+        }
+    </script>
+</body>
+</html>

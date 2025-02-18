@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Integration</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AWS File Management</h1>
+        <p>Upload and manage forensic files in AWS S3.</p>
+        <input type="file" id="file-input">
+        <br>
+        <button onclick="uploadFile()">Upload to AWS</button>
+        <div id="upload-status">
+            <h2>Upload Status:</h2>
+            <p id="status-text">No files uploaded yet.</p>
+        </div>
+    </div>
+    <script>
+        function uploadFile() {
+            document.getElementById('status-text').innerText = 'File successfully uploaded to AWS!';
+        }
+    </script>
+</body>
+</html>

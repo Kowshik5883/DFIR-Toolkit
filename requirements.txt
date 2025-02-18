@@ -1,0 +1,7 @@
+boto3
+psycopg2
+flask
+sqlalchemy
+requests
+pdfkit
+python-dotenv
